@@ -17,9 +17,11 @@ namespace defensoresCRUD.Core.Models.Dtos
         public int Sets { get; set; }
         [Display(Name = "Description")]
         public string Description { get; set; }
+
         public string Image { get; set; }
         [Url]
         public string videoLink { get; set; }
-
+        [Display(Name = "Date")]
+        public DateTime DateNow{get; set;}
     }
 }

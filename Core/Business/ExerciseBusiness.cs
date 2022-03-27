@@ -8,9 +8,11 @@ namespace defensoresCRUD.Core.Business
     public class ExerciseBusiness : IExerciseBusiness
     {
         private readonly IUnitOfWork _unitOfWork;
-        public ExerciseBusiness(IUnitOfWork unitOfWork)
+        private readonly IMapper _mapper;
+        public ExerciseBusiness(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
         public IEnumerable<ExerciseDtoView> GetAllExercises()
@@ -19,9 +21,8 @@ namespace defensoresCRUD.Core.Business
             var exercisesDto = new List<ExerciseDtoView>();
             foreach (var exercise in exercises)
             {
-                exercisesDto.Add();
+                exercisesDto.Add(_mapper.Map<ExerciseDtoView>(exercise));
             }
-
         }
     }
 }

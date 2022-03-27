@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\commitInicial\\DefensoresDeTablada\\defensoresCRUD.csproj": {}
+    "/home/arielperez/Documentos/GitHub/DefensoresDeTablada/defensoresCRUD.csproj": {}
   },
   "projects": {
-    "D:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\commitInicial\\DefensoresDeTablada\\defensoresCRUD.csproj": {
+    "/home/arielperez/Documentos/GitHub/DefensoresDeTablada/defensoresCRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\commitInicial\\DefensoresDeTablada\\defensoresCRUD.csproj",
+        "projectUniqueName": "/home/arielperez/Documentos/GitHub/DefensoresDeTablada/defensoresCRUD.csproj",
         "projectName": "defensoresCRUD",
-        "projectPath": "D:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\commitInicial\\DefensoresDeTablada\\defensoresCRUD.csproj",
-        "packagesPath": "C:\\Users\\ariel perez\\.nuget\\packages\\",
-        "outputPath": "D:\\Usuario\\Documentos\\GitHub\\ProyectoFinal\\commitInicial\\DefensoresDeTablada\\obj\\",
+        "projectPath": "/home/arielperez/Documentos/GitHub/DefensoresDeTablada/defensoresCRUD.csproj",
+        "packagesPath": "/home/arielperez/.nuget/packages/",
+        "outputPath": "/home/arielperez/Documentos/GitHub/DefensoresDeTablada/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ariel perez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/arielperez/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.14, )"
@@ -79,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
         }
       }
     }
