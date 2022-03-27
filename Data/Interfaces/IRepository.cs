@@ -1,14 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using defensoresCRUD.Models;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace defensoresCRUD.Data
 {
-    public interface IRepository <T> where T : class
+    public interface IRepository<T> where T : EntityBase
     {
-        Task<IEnumerable<T>> GetAll();
-        Task<T> GetById(int id);
-        Task<T> Create(T entity);
-        Task<T> Update(T entity);
+        IEnumerable<T> GetAll();
+        T GetById(int id);
+        void Add(T entity);
+        void Update(T entity);
         Task<T> Delete(int id);
     }
 }

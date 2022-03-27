@@ -1,3 +1,5 @@
+using defensoresCRUD.Core.Business;
+using defensoresCRUD.Core.Interfaces;
 using DefensoresDeTablada.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,7 +29,10 @@ namespace defensoresCRUD
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "defensoresCRUD", Version = "v1" });
             });
-
+            services.AddScoped<IUserBusiness, UserBusiness>();
+            services.AddScoped<IExerciseBusiness, ExerciseBusiness>();
+            //services.AddScoped<IUserBusiness, UserBusiness>();
+            //services.AddScoped<IUserBusiness, UserBusiness>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
